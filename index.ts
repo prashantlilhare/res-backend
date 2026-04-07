@@ -11,6 +11,10 @@ const PORT = env.PORT;
 async function start(): Promise<void> {
   await connectDatabase();
 
+  app.get("/", (req, res) => {
+    res.send("Restaurant backend is running ✅");
+  });
+
   app.listen(PORT, (err) => {
     if (err) {
       logger.error({ err }, "Error starting server");

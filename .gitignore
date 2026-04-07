@@ -1,3 +1,12 @@
-.env
 node_modules
-dist
+dist 
+.env
+logs    
+coverage
+*.log
+*.env
+.DS_Store
+.vscode
+.idea
+*.iml
+
